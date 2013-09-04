@@ -28,7 +28,7 @@ int splitWords(char* line, char** argv, int count){
 	char* tok;
 	tok=strtok(line, " \n	");
 	while(tok!= NULL){
-		argv[count++]=tok;//malloc((strlen(tok)+1));
+		argv[count++]=tok;
 		tok=strtok(NULL, " ");		
 	}
 	return count;
